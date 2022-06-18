@@ -16,7 +16,7 @@ h3 {
 }
 /* first page that includes the title and background */
 #page1 {
-  background-image: url(bgd.svg);
+  background-image: url(https://github.com/alvanokey/Responsive2/blob/main/bgd.svg);
   padding: 40px;
   /* margin-bottom: 40px; */
 }
