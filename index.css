@@ -16,7 +16,7 @@ h3 {
 }
 /* first page that includes the title and background */
 #page1 {
-  background-image: url(https://github.com/alvanokey/Responsive2/blob/main/bgd.svg);
+  background-image: url(./bgd.svg);
   padding: 40px;
   /* margin-bottom: 40px; */
 }
@@ -187,7 +187,7 @@ li {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-image: url(/bgm.svg);
+    background-image: url(./bgm.svg);
     width: 80%;
   }
   /* modified logo size, buttons and containers to fit screen sizes by charging their layout and other size dependent codes */
