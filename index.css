@@ -1,0 +1,327 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: auto;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+/* font family for all headers */
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+/* first page that includes the title and background */
+#page1 {
+  background-image: url(/bg-hero-desktop.svg);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+/* logo and try it free design */
+.container0 {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+/* div containing the title and image arrangement */
+.container1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  margin-top: 5%;
+}
+/* the text part of each div */
+.one,
+.one-b,
+.one-c,
+.one-d {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+/* the image part of each div */
+.two,
+.two-b,
+.two-c,
+.two-d {
+  width: 50%;
+}
+#img1 {
+  width: 100%;
+}
+/* css for all H1 tags and paragraph*/
+h1 {
+  width: 70%;
+  font-size: 45px;
+}
+p {
+  font-size: 18px;
+  width: 80%;
+  margin: 20px 0 90px;
+}
+/* Get started for free button */
+#btn2 {
+  width: 30%;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 25px;
+  padding: 10px 10px;
+  border: transparent;
+  font-size: large;
+}
+/* try it free button */
+#btn1 {
+  color: white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  color: black;
+  font-size: larger;
+  transition: linear 10ms;
+}
+/* basic transition added here  */
+#btn1:hover {
+  background-color: rgb(128, 0, 107);
+}
+#img2,
+#img3,
+#img4 {
+  width: 100%;
+  height: 50vh;
+}
+/* css for the rest of the page aside the main page  */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+/* div for the rest of the page aside the main 
+NB: my work was divided into the main (first page) the article(rest of the page) and the footer all embodied in the body tag semantics */
+.container2,
+.container3,
+.container4 {
+  display: flex;
+  border: 1px solid rgb(223, 203, 203);
+  border-radius: 20px;
+  padding: 7rem;
+  gap: 7rem;
+  margin: 40px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+h3 {
+  font-size: 40px;
+}
+/* used transformed tag to put this div slightly accross the footer by 130px */
+.ready {
+  background-color: white;
+  border-radius: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  width: 50%;
+  transform: translateY(130px);
+  height: 25vh;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 10px grey;
+}
+/* get started for free button in the .ready class div */
+#centre {
+  height: 10vh;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 50px;
+  padding: 15px 35px;
+  border: 0;
+  margin: auto;
+  width: 60%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  margin: 0px -40px;
+}
+
+#logo {
+  filter: brightness(100) grayscale(150%) drop-shadow(0 0 0 white);
+  margin: 120px 30px 30px 30px;
+  padding: 40px;
+}
+/* footer layout */
+.ft {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+li {
+  margin: 20px;
+}
+#foot {
+  width: 25%;
+  margin: 30px;
+}
+/* phone screen size layout */
+@media screen and (max-width: 375px) {
+  body {
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .container0 {
+    width: 100%;
+    margin: auto;
+  }
+  /* main page layout */
+  #page1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url(/bg-hero-mobile.svg);
+    width: 80%;
+  }
+  /* modified logo size, buttons and containers to fit screen sizes by charging their layout and other size dependent codes */
+  #logo1 {
+    width: 100px;
+    height: 20px;
+    margin: 0px;
+  }
+  #btn1 {
+    width: 30%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2px;
+    color: black;
+    font-size: 12px;
+  }
+  #btn2 {
+    width: 80vw;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 10px;
+    border: transparent;
+    font-size: large;
+    margin-bottom: 2rem;
+  }
+  .container1 {
+    display: block;
+    width: 100%;
+  }
+  h1 {
+    margin-top: 3rem;
+    width: 80vw;
+    text-align: center;
+    font-size: 25px;
+  }
+  #p1 {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .container2,
+  .container3,
+  .container4 {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 20px;
+    width: 80%;
+    border: 1px solid;
+    padding: 10px;
+    gap: 0rem;
+    border: transparent;
+    margin-top: 5px;
+    margin: auto;
+    box-shadow: 0px 0px 3px grey;
+  }
+  .two,
+  .two-b,
+  .two-c,
+  .two-d {
+    width: 90%;
+    padding: 0px;
+  }
+
+  .one-b,
+  .one-c,
+  .one-d {
+    text-align: center;
+    width: 90%;
+  }
+  p {
+    font-size: 18px;
+    width: 100%;
+    padding: 0px;
+  }
+  h3 {
+    font-size: 25px;
+    padding: 15px;
+  }
+  /* also modified tehe footer layout */
+  .ft {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .ft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  /* get started for me button transformed accross the footer was also modified */
+  .ready {
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    width: 95%;
+    transform: translateY(80px);
+    height: 25vh;
+    height: 15vh;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px grey;
+  }
+  #centre {
+    height: 8vh;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border: 0;
+    margin: auto;
+    width: 60%;
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+
+  #foot {
+    width: 90%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .copyright {
+    padding: 40px;
+  }
+}
